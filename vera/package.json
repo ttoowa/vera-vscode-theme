@@ -1,0 +1,21 @@
+{
+  "name": "vera",
+  "displayName": "vera",
+  "description": "Ice cream-like theme of pink and sky blue",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vera",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Vera-color-theme.json"
+      }
+    ]
+  }
+}

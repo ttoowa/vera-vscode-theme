@@ -1,8 +1,10 @@
 {
   "name": "vera",
-  "displayName": "vera",
+  "displayName": "Vera",
   "description": "Ice cream-like theme of pink and sky blue",
-  "version": "0.0.1",
+  "version": "0.2.0",
+  "publisher": "TTOOWA",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -17,5 +19,9 @@
         "path": "./themes/Vera-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ttoowa/vera-vscode-theme.git"
   }
 }

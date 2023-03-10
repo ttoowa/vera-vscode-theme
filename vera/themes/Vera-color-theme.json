@@ -2,67 +2,127 @@
 	"tokenColors": [
 		{
 			"settings": {
-				"background": "#1F1E1E",
 				"foreground": "#FCFCFA"
+			}
+		},
+
+		{
+			"name": "Typescript Storage type name",
+			"scope": [
+				"entity.name.namespace",
+				"entity.name.type.namespace",
+			],
+			"settings": {
+				"foreground": "#6bddefa2"
+			}
+		},		
+		{
+			"name": "Class Type name",
+			"scope": [
+				"entity.name.type",
+				"entity.name.class",
+				"entity.other.inherited-class",
+				"storage.type.ts",
+				"variable.other.object.ts",
+				// "entity.name.type.ts",
+				// "entity.name.type.class",
+				// "entity.name.type.cs",
+				// "entity.name.type.rust",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#6BDDEF"
+			}
+		},
+		{
+			"name": "Struct Type name",
+			"scope": [
+				"entity.name.type.struct",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#5bd78b"
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": [
+				"variable.parameter.ts",
+				"variable.other.readwrite.ts",
+				"entity.name.variable.local.cs",
+				"variable.other.rust"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#b4b4b4"
+			}
+		},
+		{
+			"name": "Bracket and CurlyBrace",
+			"scope": [
+				"punctuation",
+				// "punctuation.curlybrace",
+				// "punctuation.brackets",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#b4b4b4"
+			}
+		},
+		{
+			"name": "Constant",
+			"scope": "constant.language",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ef6b6b"
 			}
 		},
 		{
 			"name": "Comment",
-			"scope": "comment",
+			"scope": [
+				"comment",
+				"punctuation.definition",
+			],
 			"settings": {
-				"foreground": "#75715E"
+				"foreground": "#617374",
+				"fontStyle": "",
+			}
+		},
+		{
+			"name": "Tag",
+			"scope": [
+				"entity.name.tag.localname.cs",
+			],
+			"settings": {
+				"foreground": "#8fa5a1",
 			}
 		},
 		{
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#FFA366"
+				"foreground": "#FFA366",
 			}
 		},
 		{
-			"name": "Number",
-			"scope": "constant.numeric",
-			"settings": {
-				"foreground": "#AE81FF"
-			}
-		},
-		{
-			"name": "Built-in constant",
-			"scope": "constant.language",
-			"settings": {
-				"foreground": "#AE81FF"
-			}
-		},
-		{
-			"name": "User-defined constant",
+			"name": "Constant and Number",
 			"scope": [
+				"constant.numeric",
+				"constant.language",
 				"constant.character",
-				"constant.other"
+				"constant.other",
 			],
 			"settings": {
-				"foreground": "#AE81FF"
-			}
-		},
-		{
-			"name": "Variable",
-			"scope": "variable",
-			"settings": {
-				"fontStyle": ""
+				"foreground": "#ff9cc9"
 			}
 		},
 		{
 			"name": "Keyword",
-			"scope": "keyword",
+			"scope": [
+				"keyword",
+				"storage",
+			],
 			"settings": {
-				"foreground": "#FF86BB"
-			}
-		},
-		{
-			"name": "Storage",
-			"scope": "storage",
-			"settings": {
-				"fontStyle": "",
 				"foreground": "#FF86BB"
 			}
 		},
@@ -75,14 +135,6 @@
 			}
 		},
 		{
-			"name": "Class name",
-			"scope": "entity.name.class",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
 			"name": "This keyword",
 			"scope": "variable.language.this",
 			"settings": {
@@ -91,115 +143,11 @@
 			}
 		},
 		{
-			"name": "Constant numeric",
-			"scope": "constant.numeric",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#dbb7ff"
-			}
-		},
-		{
-			"name": "Typescript Storage type name",
-			"scope": "storage.type.ts",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},		
-		{
-			"name": "Typescript Type name",
-			"scope": "entity.name.type.ts",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
-			"name": "Typescript Object name",
-			"scope": "variable.other.object.ts",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
-			"name": "Typescript Local variable",
-			"scope": "variable.parameter.ts",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#b4b4b4"
-			}
-		},
-		{
-			"name": "Typescript Local variable readwrite",
-			"scope": "variable.other.readwrite.ts",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#b4b4b4"
-			}
-		},
-		{
-			"name": "C# Class name",
-			"scope": "entity.name.type.class.cs",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
-			"name": "C# Type name",
-			"scope": "entity.name.type.cs",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
-			"name": "C# CurlyBrace open",
-			"scope": "punctuation.curlybrace.open.cs",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#b4b4b4"
-			}
-		},
-		{
-			"name": "C# CurlyBrace close",
-			"scope": "punctuation.curlybrace.close.cs",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#b4b4b4"
-			}
-		},
-		{
-			"name": "C# Local variable",
-			"scope": "entity.name.variable.local.cs",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#b4b4b4"
-			}
-		},
-		{
-			"name": "C# null keyword",
-			"scope": "constant.language",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#ef6b6b"
-			}
-		},
-		{
-			"name": "Inherited class",
-			"scope": "entity.other.inherited-class",
-			"settings": {
-				"fontStyle": "italic underline",
-				"foreground": "#6BDDEF"
-			}
-		},
-		{
 			"name": "Function name",
 			"scope": "entity.name.function",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#E2CA64"
+				"foreground": "#e4d17d"
 			}
 		},
 		{
@@ -266,7 +214,7 @@
 			"settings": {
 				"background": "#F92672",
 				"fontStyle": "",
-				"foreground": "#F8F8F0"
+				"foreground": "#f8f0f0"
 			}
 		},
 		{
@@ -279,12 +227,41 @@
 		}
 	],
 	"colors": {
-		"editor.background": "#252525",
-		"editorCursor.foreground": "#F8F8F0",
+		"editor.background": "#1e1d1d",
 		"editor.foreground": "#FCFCFA",
+		"editorCursor.foreground": "#FFFFFF",
 		"editorWhitespace.foreground": "#3B3A32",
-		"editor.lineHighlightBackground": "#3E3D32",
-		"editor.selectionBackground": "#49483E"
+		"editor.lineHighlightBackground": "#322d2e",
+		"editor.selectionBackground": "#9a3f55",
+		"statusBar.background": "#cb5573",
+		"statusBar.noFolderBackground": "#cb5573",
+		"statusBar.debuggingBackground": "#317693",
+		"button.background": "#c74a67",
+		"activityBarBadge.background": "#c85074",
+		"input.border": "#ba5c88",
+		"input.background": "#201e1e",
+		"focusBorder": "#ba5c88",
+		"textLink.foreground": "#76e5eb",
+		"menu.background": "#2b2929",
+		"menu.separatorBackground": "#ffffff2a",
+		"menu.selectionBackground": "#98455abd",
+		"activityBar.background": "#171616",
+		"activityBar.foreground": "#ea88af",
+		"sideBar.background": "#171616",
+		"sideBar.foreground": "#949697",
+		"sideBarSectionHeader.background": "#262323",
+		"titleBar.activeBackground": "#171616",
+		"titleBar.activeForeground": "#a9a9a9",
+		"tab.activeBackground": "#1e1d1d",
+		"tab.inactiveBackground": "#161515",
+		"editorGroupHeader.tabsBackground":"#161515",
+		"list.hoverBackground": "#322d2e66",
+		"list.activeSelectionBackground": "#9a3f55",
+		"list.inactiveSelectionBackground": "#322d2e",
+		"list.focusAndSelectionOutline": "#00000000",
+		"editorWidget.background": "#424242",
+		"welcomePage.background": "#252324",
 	},
+	"semanticTokenColors": {},
 	"name": "Vera"
 }
